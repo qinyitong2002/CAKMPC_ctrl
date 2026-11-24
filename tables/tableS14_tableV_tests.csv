@@ -1,0 +1,11 @@
+level,baseline,p,p_holm
+viscous +40 %,B4,0.00781,0.0391
+viscous +40 %,B6,0.01172,0.0391
+viscous +40 %,B7,0.00781,0.0391
+viscous +40 %,B8,0.00781,0.0391
+viscous +40 %,B9,0.01953,0.0391
+direction friction +40 %,B4,0.01172,0.0469
+direction friction +40 %,B6,0.01562,0.0469
+direction friction +40 %,B7,0.01172,0.0469
+direction friction +40 %,B8,0.00781,0.0391
+direction friction +40 %,B9,0.01172,0.0469

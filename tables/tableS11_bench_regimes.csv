@@ -1,0 +1,4 @@
+regime,cycles,optimizer_cycles,optimizer_share_pct,deadline_discards,deadline_pct_of_optimizer,infeasible_discards,infeasible_pct_of_optimizer,fallback_pct_of_cycles,m,max_recovery_cycles,admission_failure_pct,triggered_mean_us,triggered_p999_us,triggered_max_us,forced_mean_us,forced_p999_us,forced_max_us,mean_latency_reduction_pct,rmse_forced_um,rmse_triggered_um
+R1,1000000,57975,5.8,56,0.10,0,0.00,0.0056,2,1,0.59,319.8,855.6,893.4,619.5,673.8,692.7,48.4,3.8,4.2
+Rc,200000,13427,6.7,2582,19.23,32,0.24,1.3070,4,3,1.16,376.6,778.4,805.3,646.8,755.1,814.2,41.8,3.4,3.7
+R2,960000,241866,25.2,41423,17.13,907,0.38,4.4094,11,7,3.44,370.4,895.4,931.6,636.8,767.4,809.9,41.8,4.5,5.1

@@ -1,0 +1,7 @@
+component,coefficients,bytes_double
+X_f (616 facets x 9),5544,44352
+Omega_b (340 facets x 9),3060,24480
+Omega_2 and Omega_in (upper bound),3060,24480
+scheduled model G,1530,12240
+policy networks (5 x 3649),18245,145960
+"P, K_b, sigma_i, W and others",200,1600

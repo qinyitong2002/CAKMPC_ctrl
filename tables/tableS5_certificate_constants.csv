@@ -1,0 +1,46 @@
+quantity,value
+calibration blocks n_b,559
+held-out blocks,279
+q_w,1.0067
+level 1/(n_b+1),0.001786
+held-out coverage,279 of 279
+"half-widths, error coordinates 1-8",0.0294 0.0091 0.0303 0.0017 0.0148 0.0032 0.0062 0.0147
+"half-widths, context coordinates 9-17",0.863 0.558 0.039 0.04 0.025 0.12 0.026 0.867 0.699
+largest error-block residual,0.0485
+lambda,0.9901
+max vertex spectral radius,0.9802
+||K_b||,36.25
+rate bound,1.4
+d_bar,0.0468
+||A_ce||_F,3.98
+||B_c||,0.0244
+||A_ec||_F,0.44
+sigma_1 (A),1.462
+sigma_6 (A),5.395
+sigma_8 (A),6.086
+sigma_11 (A),7.068
+sigma_12 (A),7.368
+sigma_14 (A),7.908
+sigma_15 (A),8.147
+facets of X_f / Omega_b,616 / 340
+backward-recursion steps,307
+QP inequality rows without / with X_f,30 / 646
+amplitude margin u_fb - sigma_{Np-1} (A),10.93
+slew margin rho - sigma_Np - sigma_{Np-1} (A),4.12
+u_bar / u_bar_ff / u_bar_fb (A),60 / 39.21 / 18
+rho_bar (A per sample),18.56
+alpha / n / q_nu,0.05 / 48866 / 1.4222
+"score exceedance, calibration / held-out",4.997 % / 4.20 %
+gamma_f terminal term,33.9
+kappa,31000.0
+a_2,1.0
+c_0,51000.0
+J_b,34000.0
+bound (24) as |e1| (um),889.0
+"J_bar_m, m = 2 (R1)",2.06e+05; |e1| <= 1409 um
+"J_bar_m, m = 4 (Rc)",3.3e+05; |e1| <= 1783 um
+"J_bar_m, m = 11 (R2)",7.64e+05; |e1| <= 2714 um
+X_f: max|e1| / e_bar,0.06
+X_f: max|e2| / e_bar,0.03
+Omega_b: max|e1| / e_bar,0.14
+Omega_b: max|e2| / e_bar,0.12

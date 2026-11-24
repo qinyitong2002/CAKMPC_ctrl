@@ -1,0 +1,4 @@
+baseline,mean_difference_um,ci_low,ci_high
+B8 physics NMPC,-5.5,-6.9,-3.1
+B6 Koopman-LQR,-9.7,-14.0,-4.3
+B4 bilinear KMPC,-11.2,-18.2,-5.2

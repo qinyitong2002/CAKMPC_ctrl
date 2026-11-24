@@ -1,0 +1,4 @@
+design,vertices,lambda,max spectral radius,X_f facets,sigma_Np-1 (A),replay p99.9 (us)
+box (deployed),16,0.9901,0.9802,616,7.068,732.5
+"triangular (F_ext_bar, F_N_bar) set",12,0.9901,0.9796,564,7.05,686.9
+component-wise rate bounds,16,-,-,463,-,-

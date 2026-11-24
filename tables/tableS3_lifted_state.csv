@@ -1,0 +1,15 @@
+indices,coordinate,role,physics_guided_product
+1-2,"e1, e2",physical tracking output,False
+3-4,"tanh(e1), tanh(e2)",unit-scale saturation,False
+5-6,"tanh(e1/2), tanh(e2/2)",mid-regime nonlinearity,False
+7,tanh(e1 e2),position-velocity coupling,False
+8,tanh((e1 + e2)/2),combined nonlinear error,False
+9,F_N_bar,contact-force proxy,False
+10,s_v,direction indicator (taken from the preview),False
+11,a_bar = a_ref / s_a,commanded acceleration (taken from the preview),False
+12,v_bar = v / s_vel,carriage velocity,False
+13,F_N_bar e1,load-correlated error,True
+14,s_v tanh(e2),direction-dependent error,True
+15,tanh(e1 F_N_bar),saturated load-error,True
+16,F_N_bar s_v,load x direction,True
+17,tanh(F_N_bar),saturated load,False

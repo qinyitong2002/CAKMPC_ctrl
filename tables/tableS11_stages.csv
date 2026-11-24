@@ -1,0 +1,7 @@
+stage,mean_us,p999_us,max_us
+input transfer,112.0,171.0,198.0
+lifting and score,27.0,49.0,57.0
+admission test (20),63.0,113.0,121.0
+"QP (optimizer cycles, completed)",412.0,587.0,600.0
+output transfer,65.0,76.0,83.0
+non-computational overhead,204.0,227.0,235.0

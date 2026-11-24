@@ -1,0 +1,11 @@
+item,value
+dominant component: Mahalanobis distance,0.527
+dominant component: one-step residual,0.294
+dominant component: ensemble spread,0.179
+held-out flag rate: distance only,0.043
+held-out flag rate: residual only,0.056
+held-out flag rate: spread only,0.047
+held-out flag rate: composite,0.042
+"timing single network (mean, p99.9 us)","7.3, 14.2"
+"timing five-network ensemble with spread (mean, p99.9 us)","26.5, 51.9"
+"timing admission test (20) (mean, p99.9 us)","67.2, 104.5"

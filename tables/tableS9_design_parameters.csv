@@ -1,0 +1,54 @@
+parameter,value
+N_p,12
+N_c,6
+Q_e,"(2000.0, 500.0)"
+R,2.0
+lifted_dimension,17
+regressor_dimension,90
+identified_coefficients,1530
+identification_snapshots,280000.0
+vertex_spectral_radius_cap,0.98
+solver,dual projected Gauss-Seidel (PGS)
+iteration_cap,5000
+termination_tolerance_A,0.001
+T_qp_dl_us,650.0
+T_oh_design_us,300.0
+N_u,185
+lambda_f,0.9998
+eps_exc,0.001
+update_budget_beta,0.008
+A4_online_LP,False
+background_test_time_ms,"(3.0, 6.0)"
+rls_update_time_us_vectorized,"(6.7, 9.1)"
+alpha,0.05
+N_d,20
+hysteresis,"(0.9, 1.1)"
+buffer_samples,2000
+startup_hold_ms,500
+startup_samples_in_Omega_in,200
+startup_window_ms,30
+ensemble_size,5
+network_layers,"(15, 64, 32, 16, 1)"
+parameters_per_network,3649
+training_samples,98000.0
+training_samples_per_stratum,24433
+training_load_range_kN,"(-3.0, 3.0)"
+training_temperature_range_degC,"(25.0, 45.0)"
+training_reference,"random multi-sine, 0.2-0.8 Hz, stroke <= 55 mm, both directions"
+score_distance_input,"x = [z (17); F_ext_bar; T_bar], 19 coordinates"
+score_covariance,"sample covariance with Ledoit-Wolf shrinkage, policy training set"
+score_spread,sample standard deviation of the five outputs (divisor 4)
+calibration_decimation_samples,20
+calibration_second_half_strata,"(12217, 12217, 12216, 12216)"
+q_nu,1.4222
+hyperparameter_selection,nested validation on conditions excluded from the tests
+B9_observer_bandwidth_rad_s,120.0
+processor,"Intel i7-14650HX, performance cores at 2.2 GHz"
+os,"Ubuntu 22.04, PREEMPT_RT"
+compiler,"gcc 11, -O3 -march=native"
+soft_plc,"EtherCAT master on an isolated performance core, priority 95"
+control_thread,"isolated performance core, SCHED_FIFO 90, mlockall, preallocated memory"
+background_thread,"RLS and tests (A1)-(A4) on a third isolated core, SCHED_FIFO 25"
+isolation,"isolcpus, nohz_full, rcu_nocbs"
+model_replacement,double buffer with atomic pointer swap at a cycle boundary
+bus,"EtherCAT, 1 kHz"

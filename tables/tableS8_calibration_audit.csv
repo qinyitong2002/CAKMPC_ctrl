@@ -1,0 +1,7 @@
+set,samples,exceedances,rate_pct,CP95_pct
+"calibration, second half",48866,2442,5.00,4.81-5.19
+held-out (same decimation and stratification),1120,47,4.20,3.10-5.54
+"held-out stratum s_v = +1, load low (|F_ext| <= F_N0)",286,10,3.50,
+"held-out stratum s_v = -1, load low (|F_ext| <= F_N0)",283,11,3.89,
+"held-out stratum s_v = +1, load high",263,12,4.56,
+"held-out stratum s_v = -1, load high",288,14,4.86,

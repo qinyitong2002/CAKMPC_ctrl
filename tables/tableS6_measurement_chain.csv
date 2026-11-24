@@ -1,0 +1,6 @@
+signal,sensor,use,resolution_noise,acquisition
+Screw-side position x; error e1,"motor encoder, 17 bit, 6 mm lead",tracking error and feedback of all controllers,0.046 um per count; noise SD 0.31 um,"drive, 1 kHz EtherCAT"
+Axial load F_ext,"NS-WL5 load cell, +-20 kN","scheduling (F_ext_bar, F_N_bar); low-pass filtered estimate F_hat for the clearance compensation",-,"analog input of the I/O module, 1 kHz EtherCAT"
+Housing temperature T,WZPT-035 PT100,scheduling (T_bar) and feedforward,-,"I/O module, 1 kHz EtherCAT"
+Output position x_out,PDM-120S-A laser displacement sensor,monitoring; not used by any controller,-,"I/O module, 1 kHz EtherCAT"
+Phase current,CTC-100 current sensor,auxiliary monitoring; not used by any controller,-,I/O module

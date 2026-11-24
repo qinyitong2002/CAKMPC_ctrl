@@ -1,0 +1,9 @@
+method,(a) condition-dependent predictor,(b) one convex QP per cycle,(c) certificate valid while the condition changes,(d) certificate kept under online updates,(e) computation allocated by model confidence,(f) command guaranteed in every period,(g) hardware validation,notes
+"Koopman MPC, fixed lift [7], [20]",no,yes,no,no,no,no,partly,
+Koopman tube MPC [11],no,yes,partly,no,no,no,no,
+"Bilinear Koopman MPC [23], [24]",yes,no,no,no,no,no,yes,
+"LPV-MPC, polytopic tubes [12]",yes,yes,yes,no,no,no,no,d: online updates not considered
+Robust event-triggered MPC [33],no,yes,yes,no,partly,no,no,e: state-threshold trigger
+Approximate MPC [31],no,n/a,partly,no,no,yes,no,f: explicit evaluation in bounded time
+Physics-based NMPC [47],yes,no,no,no,no,partly,yes,
+Proposed,yes,yes,yes,yes,yes,yes,yes,"c, d: on the event of Corollary 2; f: under the timing condition of Corollary 1"

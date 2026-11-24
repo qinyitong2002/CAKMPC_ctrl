@@ -1,0 +1,14 @@
+row,mean_us,p99_us,p999_us,max_us
+"PGS, without X_f",13.2,54.9,62.8,64.4
+"qpOASES, without X_f",7.6,33.7,36.1,38.4
+"HPIPM, without X_f",12.0,28.8,30.6,34.3
+"OSQP, without X_f",38.4,164.9,166.5,176.3
+"PGS, with X_f (616 facets), Rc/R2",331.0,698.4,732.5,784.6
+"PGS, with X_f, active terminal constraint",432.0,709.3,742.8,784.6
+"qpOASES, with X_f (warm start)",228.7,674.8,688.5,706.4
+"HPIPM, with X_f",241.4,672.5,697.1,727.4
+B8 NMPC (acados SQP-RTI),46.2,171.7,177.4,186.9
+bench R1: non-computational overhead,204.0,,227.0,235.0
+bench R1: optimizer forced (M1),619.5,,673.8,692.7
+bench R1: policy forced (M2),295.8,,610.4,676.1
+bench R1: triggered (deployed),319.8,,855.6,893.4

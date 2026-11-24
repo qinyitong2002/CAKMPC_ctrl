@@ -1,0 +1,4 @@
+scheme,mean_us,p999_us
+pruning only (optimizer every cycle),362.7,663.1
+triggering only (bench),319.8,855.6
+pruning and triggering,331.8,638.5

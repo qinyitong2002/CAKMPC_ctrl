@@ -1,0 +1,11 @@
+configuration,regime,rmse,sd,rmse_excl,e95,max,peak_iq,rms_iq,optimizer_share_pct,admission_failure_pct
+CA-KMPC,R1,4.4,1.0,4.6,10.3,13.8,13.6,5.8,5.8,0.6
+CA-KMPC,Rc,3.9,0.8,3.8,8.2,11.4,12.1,5.2,6.6,0.6
+feedforward only,R1,542.0,205.0,508.0,779.0,794.0,12.3,5.9,,
+feedforward only,Rc,436.0,189.0,397.0,682.0,721.0,11.6,5.8,,
+feedforward + fixed PD,R1,6.5,2.1,6.1,15.3,18.7,10.8,5.5,,
+feedforward + fixed PD,Rc,6.1,1.8,4.3,13.9,16.3,10.1,5.3,,
+"CA-KMPC, Delta u_NN = 0",R1,6.7,2.4,5.8,14.4,17.2,17.6,6.2,10.8,0.7
+"CA-KMPC, Delta u_NN = 0",Rc,5.8,1.6,3.9,12.6,15.8,9.6,5.1,5.1,0.2
+"CA-KMPC, single network",R1,5.6,1.5,5.2,11.7,16.2,11.8,5.6,7.4,0.6
+"CA-KMPC, single network",Rc,4.7,1.3,3.8,9.8,12.9,9.8,5.1,7.1,0.6
