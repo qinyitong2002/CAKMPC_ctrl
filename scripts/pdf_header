@@ -1,0 +1,5 @@
+\usepackage{etoolbox}
+\usepackage{amssymb}
+\AtBeginEnvironment{longtable}{\footnotesize}
+\usepackage{caption}
+\setlength{\emergencystretch}{3em}
