@@ -1,0 +1,12 @@
+# Humanoid gait data
+
+Joint-level gait data of a humanoid platform driven by linear joints, from
+which the test reference of Section VI-A is derived: the dominant frequency
+components and the amplitudes of the knee and ankle actuator strokes were
+extracted and rescaled to the stroke and velocity range of the joint under
+test, which gives the 0.2-0.8 Hz content and the 55 mm excursion of
+
+    x_ref(t) = 0.05 + 0.030 sin(0.4 pi t) + 0.015 sin(pi t) + 0.010 sin(1.6 pi t)  [m].
+
+Each file contains the time stamp and the strokes of the knee and ankle
+actuators of one walking sequence; the units are given in the file header.
