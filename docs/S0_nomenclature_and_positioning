@@ -1,0 +1,57 @@
+# Nomenclature and Positioning
+
+Numbers without the prefix "S" refer to equations, sections, tables, and figures of the article; numbers with the prefix refer to this supplementary material.
+
+## Nomenclature
+
+| Symbol | Meaning |
+|---|---|
+| $x,\ \dot x,\ x_{\mathrm{out}}$ | screw-side position, its velocity, output position $x-\delta(F_{\mathrm{ext}})$ |
+| $i_q,\ u_k,\ u_{\mathrm{ff},k}$ | $q$-axis current, feedback command, shared feedforward; $i_{q,k}=u_k+u_{\mathrm{ff},k}$ |
+| $F_{\mathrm{ext}},\ F_N,\ T$ | axial load, contact force $\lvert F_{\mathrm{ext}}\rvert$, housing temperature |
+| $e_k=[e_1,e_2]^\top$ | normalized tracking error of position and velocity |
+| $\vartheta_k=[\bar F_{\mathrm{ext}},\bar T,\bar F_N,s_v]^\top$ | scheduling vector (3); $\Theta$ its box, with vertices $\vartheta^{(1)},\dots,\vartheta^{(16)}$ |
+| $\hat\vartheta_{i\mid k}$ | scheduling value used at prediction step $i$ of cycle $k$ |
+| $z_k=[z^e_k;z^c_k]$ | lifted state (4): error block $z^e=\psi(e)\in\mathbb R^8$, context block $z^c\in\mathbb R^9$ |
+| $A(\vartheta),\ B(\vartheta)$ | scheduling-affine transition matrices (6); $A_{ee},A_{ec},A_{ce},A_{cc}$ and $B_e,B_c$ their partitions |
+| $w_k,\ \mathcal W,\ q_w,\ \hat w$ | lifting residual, its calibrated set (9), block quantile, scale vector |
+| $d_k,\ \mathcal D,\ \bar d$ | context coupling $A_{ec}(\vartheta_k)z^c_k$, its set, its bound in $\lVert\cdot\rVert_P$ |
+| $P,\ K_b,\ Q_b,\ \lambda$ | common terminal weight, backup gain, decrease matrix, contraction factor (11)–(12a) |
+| $\mathcal E_i,\ \mathcal C_i,\ \sigma_i,\ \mathcal B_\Delta$ | step-$i$ deviation set, accumulated set, input margin, prediction-change box (12b) |
+| $\mathcal X_f$ | terminal set satisfying (14a)–(14c) |
+| $\Omega_b\supset\Omega_2\supset\Omega_{\mathrm{in}}$ | envelope, policy domain, start-up set in the error coordinates |
+| $\mathcal E_{\mathrm{op}},\ \bar e_1,\ \bar e_2$ | operating set of the soft emergency stop and its bounds |
+| $\nu_k,\ q_\nu,\ \alpha$ | normalized confidence score (18), its calibrated quantile (19), level |
+| $d_{M,k},\ \varrho_k,\ \sigma_{\mathrm{ens},k}$ | Mahalanobis distance, one-step residual, ensemble spread |
+| $M_1,\ M_2,\ M_3$ | optimizer, learned policy, fallback (17) |
+| $N_p,\ N_c,\ N_d$ | prediction horizon, control horizon, dwell |
+| $T_s,\ T^{\mathrm{dl}}_{\mathrm{qp}},\ T_{\mathrm{oh}}$ | sampling period, QP completion deadline, bound on the remaining per-cycle time |
+| $\kappa,\ a_2,\ c_0,\ J_b,\ m,\ \bar J_m$ | constants of Theorems 1 and 2; $m$ is the longest run of consecutive fallback cycles |
+| $n_b,\ N_b$ | calibration blocks of Lemma 2; blocks covering an interval (Corollary 2) |
+| $R_1,\ R_c,\ R_2,\ R_3$ | nominal, sinusoidal load, load steps, thermal ramp regimes (Section VI-A) |
+
+## Table S1. Features of the Proposed Scheme and Its Nearest Neighbors
+
+Criteria of the columns:
+
+- **(a) condition-dependent predictor** — the prediction model changes with a measured operating condition;
+- **(b) one convex QP per cycle** — the online problem is a single convex quadratic program;
+- **(c) certificate valid while the condition changes** — recursive feasibility is proved for time-varying conditions within a known set;
+- **(d) certificate kept under online updates** — the certificate is shown to hold after the model is replaced online;
+- **(e) computation allocated by model confidence** — whether the optimization is solved depends on a measure of model reliability;
+- **(f) command guaranteed in every period** — an admissible command is available in every sampling period by construction;
+- **(g) hardware validation** — closed-loop experiments on physical hardware.
+
+| Method | (a) | (b) | (c) | (d) | (e) | (f) | (g) |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Koopman MPC, fixed lift [7], [20] | × | ✓ | × | × | × | × | △ |
+| Koopman tube MPC [11] | × | ✓ | △ | × | × | × | × |
+| Bilinear Koopman MPC [23], [24] | ✓ | × | × | × | × | × | ✓ |
+| LPV-MPC, polytopic tubes [12] | ✓ | ✓ | ✓ | ×¹ | × | × | × |
+| Robust event-triggered MPC [33] | × | ✓ | ✓ | × | △² | × | × |
+| Approximate MPC [31] | × | — | △ | × | × | ✓³ | × |
+| Physics-based NMPC [47] | ✓ | × | × | × | × | △ | ✓ |
+| Proposed | ✓ | ✓ | ✓⁴ | ✓⁴ | ✓ | ✓⁵ | ✓ |
+
+✓: yes; △: partially; ×: no; —: not applicable. Bracketed numbers refer to the reference list of the article.
+¹ Online model updates are not considered. ² The trigger is a state threshold, not a measure of model reliability. ³ By explicit evaluation in bounded time. ⁴ On the calibrated event of Corollary 2. ⁵ Under the timing condition of Corollary 1.
