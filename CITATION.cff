@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this material, please cite the article below."
+title: "CA-KMPC: Supplementary Material"
+authors:
+  - name: "Anonymous Authors"
+type: software
+license: MIT
+preferred-citation:
+  type: article
+  title: "Confidence-Triggered Koopman Predictive Control With Certified Feasibility for Humanoid Joints Under Operating-Condition Drift"
+  authors:
+    - name: "Anonymous Authors"
+  journal: "IEEE Transactions on Systems, Man, and Cybernetics: Systems"
+  year: 2026
